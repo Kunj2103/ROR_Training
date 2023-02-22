@@ -26,7 +26,11 @@ module Bank
       start(@userPin)
     end
     def start(pin)
-      show_options
+      if pin === 123
+        show_options
+      else
+        puts "Enter Correct PIN"
+      end
     end
     def show_options
       puts "Enter What You Want"
