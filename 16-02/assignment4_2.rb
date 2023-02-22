@@ -23,7 +23,9 @@ class Calculator
     puts sum.call(@operand1,@operand2)
   when @option == 4
     sum = Proc.new {|op1,op2| op1/op2}
-    puts sum.call(@operand1,@operand2)    
+    puts sum.call(@operand1,@operand2)
+  else
+    puts "Choose correct option"
   end
 
 end
