@@ -1,5 +1,5 @@
 SHOP_NAME = "Croma"
-COMPANY_NAME = "Dell"
+$company_name = "Dell"
 class Product
   def initialize(name,price)
     @productName=name
@@ -20,7 +20,7 @@ class Product
   end
 end
 
-p1 = Product.new("#{COMPANY_NAME} laptop",220000)
+p1 = Product.new("#{$company_name} laptop",220000)
 p1.get_user()
 
 
