@@ -1,5 +1,6 @@
+SHOP_NAME = "Croma"
+COMPANY_NAME = "Dell"
 class Product
-  
   def initialize(name,price)
     @productName=name
     @productPrice=price
@@ -10,16 +11,17 @@ class Product
   end
   
   def get_user
-    =puts "Welcome #{@userName}. Your invoice with #{@gst}% gst are below"
+    puts "Welcome to the #{SHOP_NAME}"
+    puts "Welcome #{@userName}. Your invoice with #{@gst}% gst are below"
     puts "product details"
     @gstInRps = @gst * @productPrice / 100
     @total = @gstInRps + @productPrice
-    puts "#{@productName} - #{@total}"=
+    puts "#{@productName} - #{@total}"
   end
 end
-  
-p1 = Product.new('laptop',220000)
-p2=Product.new('mouswe',200);
-p2.get_user1
+
+p1 = Product.new("#{COMPANY_NAME} laptop",220000)
 p1.get_user()
+p2=Product.new("#{COMPANY_NAME} mouse",200);
+p2.get_user()
 
