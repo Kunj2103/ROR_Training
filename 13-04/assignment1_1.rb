@@ -22,6 +22,5 @@ end
 
 p1 = Product.new("#{COMPANY_NAME} laptop",220000)
 p1.get_user()
-p2=Product.new("#{COMPANY_NAME} mouse",200);
-p2.get_user()
+
 
